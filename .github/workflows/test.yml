@@ -22,12 +22,3 @@ jobs:
       # You can test your matrix by printing the current Python version
       - name: Test program
         run: python tests.py
-
-  automerge:
-    runs-on: ubuntu-latest
-    steps:
-      - id: automerge
-        name: automerge
-        uses: "pascalgn/automerge-action@v0.15.6"
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
